@@ -1,12 +1,12 @@
 body{
-    background: linear-gradient(0deg, rgba(253,253,253,1) 0%, rgba(185, 185, 185, 0.85) 100%);
+    
     font-family: 'Montserrat',  'Times New Roman', Times, serif;
     height: auto;
     position: relative;
 }
 
 body:after{
-    background-color:#222222;
+    background-color:#47b2e4;
     content: "";
     height: 100vh;
     left: 70px;
@@ -41,7 +41,7 @@ h1{
 }
 
 h1:after{
-    background-color: #ff0202;
+    background-color: #47b2e4;
     bottom: -10px;
     content: "";
     height: 5px;
@@ -110,7 +110,7 @@ h1:after{
 }
 
 .course-content{
-    background-color: #e33232;
+    background-color: #47b2e4;
     color: white;
     display: flex;
     font-size: 1.1rem;
