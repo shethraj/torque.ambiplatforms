@@ -356,11 +356,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 50px;
+  color: rgba(39, 34, 34, 0.6);
+  margin-bottom: 0px;
   font-size: 24px;
 }
 #hero .btn-get-started {
@@ -374,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
-  background: #47b2e4;
+  background: #067eb1;
 }
 #hero .btn-get-started:hover {
   background: #209dd8;
