@@ -123,7 +123,7 @@ h6 {
 }
 
 a {
-	color: #555;
+	color: rgb(255, 255, 255);
 	text-decoration: underline;
 }
 
@@ -1472,7 +1472,7 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #4f3cda url("../images/up-arrow.png") no-repeat center 47%;
+	background: #47b2e4 url("../images/ambi1.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
