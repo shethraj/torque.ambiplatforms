@@ -20,12 +20,9 @@
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-<<<<<<< HEAD
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-=======
->>>>>>> 8d5cacce7a953c2b309067bf013dc0deb325c0f6
     <!-- Website Title -->
     <!-- Website Title -->
     <title>TORQUE</title>
@@ -268,6 +265,83 @@
 }
 
 
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.panel-default>.panel-heading a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.panel-default>.panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: transform .25s linear;
+  -webkit-transition: -webkit-transform .25s linear;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"] {
+  background-color: #eee;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+  content: "\2212";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+  content: "\002b";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.accordion-option {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 15px 0;
+}
+
+.accordion-option .title {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-option .toggle-accordion {
+  float: right;
+  font-size: 16px;
+  color: #6a6c6f;
+}
+
+.accordion-option .toggle-accordion:before {
+  content: "Expand All";
+}
+
+.accordion-option .toggle-accordion.active:before {
+  content: "Collapse All";
+}
+
 
 
     </style>
@@ -407,7 +481,7 @@
     </div> <!-- end of slider-1 -->
     <!-- end of customers -->
     <div>
-        <h2 class="how">What Exactly is Torqueverse?</h2>
+        <h2 style="text-align: center;" class="how">What Exactly is Torqueverse?</h2>
         <br>
         
         <p class="con">A Torqueverse is a network of 3D virtual worlds focused on social connection. In futurism and science fiction, it is often described as a hypothetical iteration of the Internet as a single, universal virtual world that is facilitated by the use of virtual and augmented reality headsets.</p>
@@ -686,4 +760,31 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
+<script>
+  $(document).ready(function() {
+
+$(".toggle-accordion").on("click", function() {
+  var accordionId = $(this).attr("accordion-id"),
+    numPanelOpen = $(accordionId + ' .collapse.in').length;
+  
+  $(this).toggleClass("active");
+
+  if (numPanelOpen == 0) {
+    openAllPanels(accordionId);
+  } else {
+    closeAllPanels(accordionId);
+  }
+})
+
+openAllPanels = function(aId) {
+  console.log("setAllPanelOpen");
+  $(aId + ' .panel-collapse:not(".in")').collapse('show');
+}
+closeAllPanels = function(aId) {
+  console.log("setAllPanelclose");
+  $(aId + ' .panel-collapse.in').collapse('hide');
+}
+   
+});
+</script>
 </html>
