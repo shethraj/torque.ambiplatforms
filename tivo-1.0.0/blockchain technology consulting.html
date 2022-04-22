@@ -1,605 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="TORQUE">
-    <meta name="author" content="Raj shethraj">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- SEO Meta Tags -->
+	<meta name="description" content="TORQUE">
+	<meta name="author" content="Raj shethraj">
+	<!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" />
+	<!-- website name -->
+	<meta property="og:site" content="" />
+	<!-- website link -->
+	<meta property="og:title" content="" />
+	<!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" />
+	<!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" />
+	<!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" />
+	<!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
-
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-  <script src="../assets/js/main.js"></script>
-    <!-- Website Title -->
-    <title>TORQUE</title>
-    
-    <!-- Styles -->
-    <style>
-        #header {
-  transition: all 1s;
-  z-index: 997;
-  padding: 0 0;
-  background-color: #47b2e4;
-}
-#header.header-scrolled, #header.header-inner-pages {
-  background: #47b2e4;
-  
-}
-#header .logo {
-  font-size: 30px;
-  margin: 0;
-  padding: 0 10px;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: 0px;
-  text-transform: none;
-
-}
-#header .logo a {
-  color: #47b2e4;
-}
-#header .logo img {
-  max-height: 80px;
-  width: 150px;
-}
-#header .logo1 img {
-  max-height: 100px;
-  width: 150px;
-}
-
-
-/*--------------------------------------------------------------
+	<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<!-- Website Title -->
+	<title>TORQUE</title>
+	<!-- Styles -->
+	<style>
+	#header {
+		transition: all 1s;
+		z-index: 997;
+		padding: 0 0;
+		background-color: #47b2e4;
+	}
+	
+	#header.header-scrolled,
+	#header.header-inner-pages {
+		background: #47b2e4;
+	}
+	
+	#header .logo {
+		font-size: 30px;
+		margin: 0;
+		padding: 0 10px;
+		line-height: 1;
+		font-weight: 500;
+		letter-spacing: 0px;
+		text-transform: none;
+	}
+	
+	#header .logo a {
+		color: #47b2e4;
+	}
+	
+	#header .logo img {
+		max-height: 80px;
+		width: 150px;
+	}
+	
+	#header .logo1 img {
+		max-height: 100px;
+		width: 150px;
+	}
+	/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
+	/**
 * Desktop Navigation 
 */
-.navbar {
-  padding: 0;
-}
-.navbar ul {
-  margin-left: 400px;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  align-items: flex-end;
-}
-.navbar li {
-  position: relative;
-}
-.navbar a, .navbar a:focus {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-size: 15px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  white-space: nowrap;
-  transition: 0.3s;
-}
-.navbar a i, .navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #000000;
-}
-.navbar .getstarted, .navbar .getstarted:focus {
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 50px;
-  color: #fff;
-  font-size: 14px;
-  border: 2px solid #47b2e4;
-  font-weight: 600;
-}
-.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-  color: rgb(255, 255, 255);
-  background: #0026ff;
-}
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #47b2e4;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
-}
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 500;
-  color: #ffffff;
-}
-.navbar .dropdown ul a i {
-  font-size: 12px;
-  font-weight: 500;
-  color: #000000;
-  text-transform: uppercase;
-}
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #000000;
-}
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
-
-/**
+	
+	.navbar {
+		padding: 0;
+	}
+	
+	.navbar ul {
+		margin-left: 400px;
+		padding: 0;
+		display: flex;
+		justify-content: flex-end;
+		list-style: none;
+		align-items: flex-end;
+	}
+	
+	.navbar li {
+		position: relative;
+	}
+	
+	.navbar a,
+	.navbar a:focus {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding: 10px 0 10px 30px;
+		font-size: 15px;
+		font-weight: 500;
+		color: rgb(255, 255, 255);
+		white-space: nowrap;
+		transition: 0.3s;
+	}
+	
+	.navbar a i,
+	.navbar a:focus i {
+		font-size: 12px;
+		line-height: 0;
+		margin-left: 5px;
+	}
+	
+	.navbar a:hover,
+	.navbar .active,
+	.navbar .active:focus,
+	.navbar li:hover > a {
+		color: #000000;
+	}
+	
+	.navbar .getstarted,
+	.navbar .getstarted:focus {
+		padding: 8px 20px;
+		margin-left: 30px;
+		border-radius: 50px;
+		color: #fff;
+		font-size: 14px;
+		border: 2px solid #47b2e4;
+		font-weight: 600;
+	}
+	
+	.navbar .getstarted:hover,
+	.navbar .getstarted:focus:hover {
+		color: rgb(255, 255, 255);
+		background: #0026ff;
+	}
+	
+	.navbar .dropdown ul {
+		display: block;
+		position: absolute;
+		left: 14px;
+		top: calc(100% + 30px);
+		margin: 0;
+		padding: 10px 0;
+		z-index: 99;
+		opacity: 0;
+		visibility: hidden;
+		background: #47b2e4;
+		box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+		transition: 0.3s;
+		border-radius: 4px;
+	}
+	
+	.navbar .dropdown ul li {
+		min-width: 200px;
+	}
+	
+	.navbar .dropdown ul a {
+		padding: 10px 20px;
+		font-size: 14px;
+		text-transform: none;
+		font-weight: 500;
+		color: #ffffff;
+	}
+	
+	.navbar .dropdown ul a i {
+		font-size: 12px;
+		font-weight: 500;
+		color: #000000;
+		text-transform: uppercase;
+	}
+	
+	.navbar .dropdown ul a:hover,
+	.navbar .dropdown ul .active:hover,
+	.navbar .dropdown ul li:hover > a {
+		color: #000000;
+	}
+	
+	.navbar .dropdown:hover > ul {
+		opacity: 1;
+		top: 100%;
+		visibility: visible;
+	}
+	
+	.navbar .dropdown .dropdown ul {
+		top: 0;
+		left: calc(100% - 30px);
+		visibility: hidden;
+	}
+	
+	.navbar .dropdown .dropdown:hover > ul {
+		opacity: 1;
+		top: 0;
+		left: 100%;
+		visibility: visible;
+	}
+	
+	@media (max-width: 1366px) {
+		.navbar .dropdown .dropdown ul {
+			left: -90%;
+		}
+		.navbar .dropdown .dropdown:hover > ul {
+			left: -100%;
+		}
+	}
+	/**
 * Mobile Navigation 
 */
-.mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-}
-.mobile-nav-toggle.bi-x {
-  color: #fff;
-}
-
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-}
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
-  transition: 0.3s;
-  z-index: 999;
-}
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-.navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #37517e;
-}
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #47b2e4;
-}
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-  margin: 15px;
-  color: #37517e;
-}
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #47b2e4;
-}
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
-}
-
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
+	
+	.mobile-nav-toggle {
+		color: #fff;
+		font-size: 28px;
+		cursor: pointer;
+		display: none;
+		line-height: 0;
+		transition: 0.5s;
+	}
+	
+	.mobile-nav-toggle.bi-x {
+		color: #fff;
+	}
+	
+	@media (max-width: 991px) {
+		.mobile-nav-toggle {
+			display: block;
+		}
+		.navbar ul {
+			display: none;
+		}
+	}
+	
+	.navbar-mobile {
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background: rgba(40, 58, 90, 0.9);
+		transition: 0.3s;
+		z-index: 999;
+	}
+	
+	.navbar-mobile .mobile-nav-toggle {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	
+	.navbar-mobile ul {
+		display: block;
+		position: absolute;
+		top: 55px;
+		right: 15px;
+		bottom: 15px;
+		left: 15px;
+		padding: 10px 0;
+		border-radius: 10px;
+		background-color: #fff;
+		overflow-y: auto;
+		transition: 0.3s;
+	}
+	
+	.navbar-mobile a,
+	.navbar-mobile a:focus {
+		padding: 10px 20px;
+		font-size: 15px;
+		color: #37517e;
+	}
+	
+	.navbar-mobile a:hover,
+	.navbar-mobile .active,
+	.navbar-mobile li:hover > a {
+		color: #47b2e4;
+	}
+	
+	.navbar-mobile .getstarted,
+	.navbar-mobile .getstarted:focus {
+		margin: 15px;
+		color: #37517e;
+	}
+	
+	.navbar-mobile .dropdown ul {
+		position: static;
+		display: none;
+		margin: 10px 20px;
+		padding: 10px 0;
+		z-index: 99;
+		opacity: 1;
+		visibility: visible;
+		background: #fff;
+		box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+	}
+	
+	.navbar-mobile .dropdown ul li {
+		min-width: 200px;
+	}
+	
+	.navbar-mobile .dropdown ul a {
+		padding: 10px 20px;
+	}
+	
+	.navbar-mobile .dropdown ul a i {
+		font-size: 12px;
+	}
+	
+	.navbar-mobile .dropdown ul a:hover,
+	.navbar-mobile .dropdown ul .active:hover,
+	.navbar-mobile .dropdown ul li:hover > a {
+		color: #47b2e4;
+	}
+	
+	.navbar-mobile .dropdown > .dropdown-active {
+		display: block;
+	}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	
 	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
-</head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
-    
+	<link rel="icon" href="images/favicon.png"> </head>
 
-    <!-- Navigation -->
-    <header id="header" class="fixed-top" >
-      <div class="container d-flex align-items-center">
-  
-        <h1 class="logo me-auto">
+<body data-spy="scroll" data-target=".fixed-top">
+	<!-- Preloader -->
+	<div class="spinner-wrapper">
+		<div class="spinner">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+	</div>
+	<!-- end of preloader -->
+	<!-- Navigation -->
+	<header id="header" class="fixed-top">
+		<div class="container d-flex align-items-center">
+			<h1 class="logo me-auto">
           <a href="../index.html"> <img src="images/ambi12.png" alt=""></a>
         </h1>
-        <h1 class="logo1 me-auto"><img src="images/ambi2.png"  alt="">
+			<h1 class="logo1 me-auto"><img src="images/ambi2.png"  alt="">
         </h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-  
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            
-            <li class="dropdown"><a href="#"><span>Explore</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                
-                <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="https://ambiplatforms-nft-marketplace.netlify.app/">NFT</a></li>
-                                      
-                  </ul>
-                </li>
-                <li class="dropdown"><a href="#"><span>Roadmap</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="../roadmap2/index.html">TORQUE ROADMAP</a></li>
-                    
-                  </ul>
-                </li>
-                
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
-          </ul>
-          
-        </nav><!-- .navbar -->
-  
-      </div>
-    </header>
-
-
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-xl-5">
-                        <div class="text-container">
-                            <h1>Blockchain Consulting</h1>
-                            <p class="p-large">Leverage our blockchain consulting services to harness the potential of blockchain and gain valuable insights on your projects spanning, DeFi, NFTs, Web3, and Metaverse. From ideation to selecting the right protocol, our team turns your aspirations into practical application.</p>
-                            <!-- <a class="btn-solid-lg page-scroll" href="sign-up.html">GET IN TOUCH</a> -->
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6 col-xl-7">
-                        <div class="image-container">
-                            <div class="img-wrapper">
-                                <img class="img-fluid" src="images/Blockchain Consulting.png" alt="alternative">
-                            </div> <!-- end of img-wrapper -->
-                        </div> <!-- end of image-container -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
-    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310"><defs><style>.cls-1{fill:#47b2e4;}</style></defs><title>header-frame</title><path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/></svg>
-    <!-- end of header -->
-
-
-    <!-- Customers -->
-    <div class="slider-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Image Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container image-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                        <img class="img-fluid" src="images/customer-logo-1.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                        <img class="img-fluid" src="images/customer-logo-2.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                        <img class="img-fluid" src="images/customer-logo-3.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                        <img class="img-fluid" src="images/customer-logo-4.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                        <img class="img-fluid" src="images/customer-logo-5.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                        <img class="img-fluid" src="images/customer-logo-6.png" alt="alternative">
-                                </div>
-                            </div> <!-- end of swiper-wrapper -->
-                        </div> <!-- end of swiper container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of customers -->
-    <div>
-        <!-- <h2 class="how">Our Blockchain Consulting Services</h2>
-        <img class="img-fluid" src="images/social how.PNG" alt="alternative" height="50%" width="100%"> -->
-    </div>
-    <!-- Pricing -->
-    <div id="pricing" class="cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="above-heading"></div>
-                    <h2 class="h2-heading">Our Blockchain Consulting Services</h2>
-                    <p>Our blockchain consultants understand your project-specific needs and help you identify the right blockchain protocol that suits your business case. We have helped 125+ startups and enterprises achieve success with our training workshops, prototype design, and blockchain proof of concepts.</p>
-                    <p>---------------------------------------------------------------------------------------------------------------------------------</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card-->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">Strategy workshop and training</div>
-                            <div class="price"><span class="currency"></span><span class="value"></span></div>
-                            <div class="frequency"></div>
-                            <div class="divider"></div>
-                            <p>Our team conducts blockchain workshops and live webinars to help you better understand blockchain technology, its potential use cases & utilization. We demonstrate how the blockchain can transform your industry with case studies of our projects.</p>
-                            <div class="button-wrapper">
-                                <!-- <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a> -->
-                            </div>
-                        </div>
-                    </div> <!-- end of card -->
-                    <!-- end of card -->
-
-                    <!-- Card-->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">Blockchain Consultancy</div>
-                            <div class="price"><span class="currency"></span><span class="value"></span></div>
-                            <div class="frequency"></div>
-                            <div class="divider"></div>
-                            <p>We examine your existing solution, identify the need for a blockchain solution specific to your business use case and analyze how blockchain will add value to your business. We suggest the right technology and the possible solutions for the proposed project.</p>
-                            <div class="button-wrapper">
-                                <!-- <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a> -->
-                            </div>
-                        </div>
-                    </div> <!-- end of card -->
-
-                    <!-- Card-->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">Blockchain Development</div>
-                            <div class="price"><span class="currency"></span><span class="value"></span></div>
-                            <div class="frequency"></div>
-                            <div class="divider"></div>
-                            <p>Once you understand the blockchain feasibility for your use case, you can move your project to development. As a leading blockchain development company, we develop and deliver scalable blockchain solutions to innovate your business operations.</p>
-                            <div class="button-wrapper">
-                                <!-- <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a> -->
-                            </div>
-                        </div>
-                    </div> <!-- end of card -->
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-2 -->
-    <!-- end of pricing -->
-
-    <div>
-        <div style="text-align:center;"><h2>Our Blockchain Consulting Process</h2></div>
-        <img class="img-fluid" src="images/blockchain consultancy fea.png" alt="alternative" height="50%" width="100%">
-    </div>
-    <!-- Description -->
-     <!-- end of cards-1 -->
-    <!-- end of description -->
-
-
-    <!-- Features -->
-  
-    <!-- end of features -->
-
-
-    <!-- Details Lightboxes -->
-    <!-- Details Lightbox 1 -->
-	
-    <!-- end of details lightbox 1 -->
-
-    <!-- Details Lightbox 2 -->
-	
-    <!-- end of details lightbox 2 -->
-
-    <!-- Details Lightbox 3 -->
-	
-
-
-    <!-- Details -->
-    
-
-
-    <!-- Video -->
-     <!-- end of basic-2 -->
-    <!-- end of video -->
-
-
-    
-
-
-    <!-- Testimonials -->
-     <!-- end of slider-2 -->
-    <!-- end of testimonials -->
-    
-
-    <!-- Newsletter -->
-     <!-- end of form -->
-    <!-- end of newsletter -->
-
-<br/>
-<br/>
-    <!-- Footer -->
-    <footer id="footer">
-
-    
-
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-  
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h4>AmbiPlatforms</h4>
-              <p>
-                <br>
-                312W. 2nd Street, Suite 1064<br>
-                Casper, WY 82601<br>
-               
-              </p>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="../index.html">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="../index.html">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="../roadmap2/index.html">Roadmap</a></li>
-                <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li> -->
-                <li><i class="bx bx-chevron-right"></i> <a href="./privacy-policy.html">Privacy policy</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="./blockchainconsulting.html">Our Own Blockchain</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="./blockchainconsulting.html">Blockchain Consulting</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="./metaverse.html">VR Metaverse</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="./index.html">No-Code AI</a></li>
-               
-              </ul>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Social Networks</h4>
-              <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
-              <div class="social-links mt-3">
-                <a href="https://twitter.com/DEV_TORQUE" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.reddit.com/user/DEV-TORQUE" class="facebook"><i class="bx bxl-reddit"></i></a>
-                <a href="https://www.instagram.com/dev_torque/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://discord.gg/C3YPas8r" class="google-plus"><i class="bx bxl-discord"></i></a>
-                <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
-              </div>
-            </div>
-  
-          </div>
-        </div>
-      </div>
-  
-      <div class="container footer-bottom clearfix">
-        <div class="copyright">
-          &copy; Copyright <strong><span>AmbiPlatforms</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-          Designed by <a href="https://vmukti.com/">Team Torque</a>
-        </div>
-      </div>
-    </footer>
-     <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+			<!-- Uncomment below if you prefer to use an image logo -->
+			<!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+			<nav id="navbar" class="navbar">
+				<ul>
+					<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+					<li><a class="nav-link scrollto" href="#about">About</a></li>
+					<li><a class="nav-link scrollto" href="#services">Services</a></li>
+					<li class="dropdown"><a href="#"><span>Explore</span> <i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-right"></i></a>
+								<ul>
+									<li><a href="https://ambiplatforms-nft-marketplace.netlify.app/">NFT</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="#"><span>Roadmap</span> <i class="bi bi-chevron-right"></i></a>
+								<ul>
+									<li><a href="../roadmap2/index.html">TORQUE ROADMAP</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+					<!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+				</ul>
+			</nav>
+			<!-- .navbar -->
+		</div>
+	</header>
+	<!-- Header -->
+	<header id="header" class="header">
+		<div class="header-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-xl-5">
+						<div class="text-container">
+							<h1>Blockchain Consulting</h1>
+							<p class="p-large">Leverage our blockchain consulting services to harness the potential of blockchain and gain valuable insights on your projects spanning, DeFi, NFTs, Web3, and Metaverse. From ideation to selecting the right protocol, our team turns your aspirations into practical application.</p>
+							<!-- <a class="btn-solid-lg page-scroll" href="sign-up.html">GET IN TOUCH</a> --></div>
+						<!-- end of text-container -->
+					</div>
+					<!-- end of col -->
+					<div class="col-lg-6 col-xl-7">
+						<div class="image-container">
+							<div class="img-wrapper"> <img class="img-fluid" src="images/Blockchain Consulting.png" alt="alternative"> </div>
+							<!-- end of img-wrapper -->
+						</div>
+						<!-- end of image-container -->
+					</div>
+					<!-- end of col -->
+				</div>
+				<!-- end of row -->
+			</div>
+			<!-- end of container -->
+		</div>
+		<!-- end of header-content -->
+	</header>
+	<!-- end of header -->
+	<svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310">
+		<defs>
+			<style>
+			.cls-1 {
+				fill: #47b2e4;
+			}
+			</style>
+		</defs>
+		<title>header-frame</title>
+		<path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z" />
+	</svg>
+	<!-- end of header -->
+	<!-- Customers -->
+	<div class="slider-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Image Slider -->
+					<div class="slider-container">
+						<div class="swiper-container image-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"> <img class="img-fluid" src="images/customer-logo-1.png" alt="alternative"> </div>
+								<div class="swiper-slide"> <img class="img-fluid" src="images/customer-logo-2.png" alt="alternative"> </div>
+								<div class="swiper-slide"> <img class="img-fluid" src="images/customer-logo-3.png" alt="alternative"> </div>
+								<div class="swiper-slide"> <img class="img-fluid" src="images/customer-logo-4.png" alt="alternative"> </div>
+								<div class="swiper-slide"> <img class="img-fluid" src="images/customer-logo-5.png" alt="alternative"> </div>
+								<div class="swiper-slide"> <img class="img-fluid" src="images/customer-logo-6.png" alt="alternative"> </div>
+							</div>
+							<!-- end of swiper-wrapper -->
+						</div>
+						<!-- end of swiper container -->
+					</div>
+					<!-- end of slider-container -->
+					<!-- end of image slider -->
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- end of row -->
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of slider-1 -->
+	<!-- end of customers -->
+	<div>
+		<!-- <h2 class="how">Our Blockchain Consulting Services</h2>
+        <img class="img-fluid" src="images/social how.PNG" alt="alternative" height="50%" width="100%"> --></div>
+	<!-- Pricing -->
+	<div id="pricing" class="cards-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="above-heading"></div>
+					<h2 class="h2-heading">Our Blockchain Consulting Services</h2>
+					<p>Our blockchain consultants understand your project-specific needs and help you identify the right blockchain protocol that suits your business case. We have helped 125+ startups and enterprises achieve success with our training workshops, prototype design, and blockchain proof of concepts.</p>
+					<p>---------------------------------------------------------------------------------------------------------------------------------</p>
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- end of row -->
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Card-->
+					<div class="card">
+						<div class="card-body">
+							<div class="card-title">Strategy workshop and training</div>
+							<div class="price"><span class="currency"></span><span class="value"></span></div>
+							<div class="frequency"></div>
+							<div class="divider"></div>
+							<p>Our team conducts blockchain workshops and live webinars to help you better understand blockchain technology, its potential use cases & utilization. We demonstrate how the blockchain can transform your industry with case studies of our projects.</p>
+							<div class="button-wrapper">
+								<!-- <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a> --></div>
+						</div>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+					<!-- Card-->
+					<div class="card">
+						<div class="card-body">
+							<div class="card-title">Blockchain Consultancy</div>
+							<div class="price"><span class="currency"></span><span class="value"></span></div>
+							<div class="frequency"></div>
+							<div class="divider"></div>
+							<p>We examine your existing solution, identify the need for a blockchain solution specific to your business use case and analyze how blockchain will add value to your business. We suggest the right technology and the possible solutions for the proposed project.</p>
+							<div class="button-wrapper">
+								<!-- <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a> --></div>
+						</div>
+					</div>
+					<!-- end of card -->
+					<!-- Card-->
+					<div class="card">
+						<div class="card-body">
+							<div class="card-title">Blockchain Development</div>
+							<div class="price"><span class="currency"></span><span class="value"></span></div>
+							<div class="frequency"></div>
+							<div class="divider"></div>
+							<p>Once you understand the blockchain feasibility for your use case, you can move your project to development. As a leading blockchain development company, we develop and deliver scalable blockchain solutions to innovate your business operations.</p>
+							<div class="button-wrapper">
+								<!-- <a class="btn-solid-reg page-scroll" href="sign-up.html">SIGN UP</a> --></div>
+						</div>
+					</div>
+					<!-- end of card -->
+					<!-- end of card -->
+				</div>
+				<!-- end of col -->
+			</div>
+			<!-- end of row -->
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of cards-2 -->
+	<!-- end of pricing -->
+	<div>
+		<div style="text-align:center;">
+			<h2>Our Blockchain Consulting Process</h2></div> <img class="img-fluid" src="images/blockchain consultancy fea.png" alt="alternative" height="50%" width="100%"> </div>
+	<!-- Description -->
+	<!-- end of cards-1 -->
+	<!-- end of description -->
+	<!-- Features -->
+	<!-- end of features -->
+	<!-- Details Lightboxes -->
+	<!-- Details Lightbox 1 -->
+	<!-- end of details lightbox 1 -->
+	<!-- Details Lightbox 2 -->
+	<!-- end of details lightbox 2 -->
+	<!-- Details Lightbox 3 -->
+	<!-- Details -->
+	<!-- Video -->
+	<!-- end of basic-2 -->
+	<!-- end of video -->
+	<!-- Testimonials -->
+	<!-- end of slider-2 -->
+	<!-- end of testimonials -->
+	<!-- Newsletter -->
+	<!-- end of form -->
+	<!-- end of newsletter -->
+	<br/>
+	<br/>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 footer-contact">
+						<h4>AmbiPlatforms</h4>
+						<p>
+							<br> 312W. 2nd Street, Suite 1064
+							<br> Casper, WY 82601
+							<br> </p>
+					</div>
+					<div class="col-lg-3 col-md-6 footer-links">
+						<h4>Useful Links</h4>
+						<ul>
+							<li><i class="bx bx-chevron-right"></i> <a href="../index.html">Home</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="../index.html">About us</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="../roadmap2/index.html">Roadmap</a></li>
+							<!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li> -->
+							<li><i class="bx bx-chevron-right"></i> <a href="./privacy-policy.html">Privacy policy</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 footer-links">
+						<h4>Our Services</h4>
+						<ul>
+							<li><i class="bx bx-chevron-right"></i> <a href="./blockchainconsulting.html">Our Own Blockchain</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="./blockchainconsulting.html">Blockchain Consulting</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="./metaverse.html">VR Metaverse</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="./index.html">No-Code AI</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 footer-links">
+						<h4>Our Social Networks</h4>
+						<!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+						<div class="social-links mt-3"> <a href="https://twitter.com/DEV_TORQUE" class="twitter"><i class="bx bxl-twitter"></i></a> <a href="https://www.reddit.com/user/DEV-TORQUE" class="facebook"><i class="bx bxl-reddit"></i></a> <a href="https://www.instagram.com/dev_torque/" class="instagram"><i class="bx bxl-instagram"></i></a> <a href="https://discord.gg/C3YPas8r" class="google-plus"><i class="bx bxl-discord"></i></a>
+							<!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> --></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container footer-bottom clearfix">
+			<div class="copyright"> &copy; Copyright <strong><span>AmbiPlatforms</span></strong>. All Rights Reserved </div>
+			<div class="credits">
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you purchased the pro version. -->
+				<!-- Licensing information: https://bootstrapmade.com/license/ -->
+				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->Designed by <a href="https://vmukti.com/">Team Torque</a> </div>
+		</div>
+	</footer>
+	<!-- end of footer -->
+	<!-- end of footer -->
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery for Bootstrap's JavaScript plugins -->
+	<script src="js/popper.min.js"></script>
+	<!-- Popper tooltip library for Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap framework -->
+	<script src="js/jquery.easing.min.js"></script>
+	<!-- jQuery Easing for smooth scrolling between anchors -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Swiper for image and text sliders -->
+	<script src="js/jquery.magnific-popup.js"></script>
+	<!-- Magnific Popup for lightboxes -->
+	<script src="js/validator.min.js"></script>
+	<!-- Validator.js - Bootstrap plugin that validates forms -->
+	<script src="js/scripts.js"></script>
+	<!-- Custom scripts -->
 </body>
+
 </html>
