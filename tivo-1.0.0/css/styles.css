@@ -48,57 +48,57 @@ html {
 
 body, p {
 	color: #555;
-	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+	font: 400 1rem/1.625rem "Roboto" ;
 	;
 }
 
 .p-large {
-	font: 400 1.125rem/1.75rem "Open Sans", sans-serif;
+	font: 400 1.125rem/1.75rem "Roboto" ;
 }
 
 .p-small {
-	font: 400 0.875rem/1.5rem "Open Sans", sans-serif;
+	font: 400 0.875rem/1.5rem "Roboto";
 }
 
 h1 {
 	color: #333;
-	font: 700 2.5rem/3.125rem "Open Sans", sans-serif;
+	font: 700 2.5rem/3.125rem "Roboto", sans-serif;
 	letter-spacing: -0.2px;
 }
 
 h2 {
 	color: rgb(0, 0, 0);
-	font: 700 2rem/2.625rem "Open Sans", sans-serif;
+	font: 700 2rem/2.625rem "Roboto", sans-serif;
 	letter-spacing: -0.2px;
 }
 
 h3 {
 	color: #333;
-	font: 700 1.625rem/2.125rem "Open Sans", sans-serif;
+	font: 700 1.625rem/2.125rem "Roboto", sans-serif;
 	letter-spacing: -0.2px;
 }
 
 h4 {
 	color: #333;
-	font: 700 1.375rem/1.75rem "Open Sans", sans-serif;
+	font: 700 1.375rem/1.75rem "Roboto", sans-serif;
 	letter-spacing: -0.1px;
 }
 
 h5 {
 	color: #333;
-	font: 700 1.125rem/1.5rem "Open Sans", sans-serif;
+	font: 700 1.125rem/1.5rem "Roboto", sans-serif;
 	letter-spacing: -0.1px;
 }
 
 h6 {
 	color: #333;
-	font: 700 1rem/1.375rem "Open Sans", sans-serif;
+	font: 700 1rem/1.375rem "Roboto", sans-serif;
 	letter-spacing: -0.1px;
 }
 
 .above-heading {
 	color: #5f4dee;
-	font: 700 0.75rem/0.875rem "Open Sans", sans-serif;
+	font: 700 0.75rem/0.875rem "Roboto", sans-serif;
 	text-align: center;
 }
 
@@ -107,11 +107,11 @@ h6 {
 }
 
 .testimonial-text {
-	font: italic 400 1rem/1.625rem "Open Sans", sans-serif;
+	font: italic 400 1rem/1.625rem "Roboto", sans-serif;
 }
 
 .testimonial-author {
-	font: 700 1rem/1.625rem "Open Sans", sans-serif;
+	font: 700 1rem/1.625rem "Roboto", sans-serif;
 	letter-spacing: -0.1px;
 }
 
@@ -2019,7 +2019,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 11rem;
+		padding-top: 6rem;
 		padding-bottom: 5rem;
 	}
 
